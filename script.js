@@ -1,14 +1,14 @@
 class Animal {
   constructor(species) {
-    this._species = species;
+    this.species = species;
   }
 
-  get species() {
-    return this._species;
+  getSpecies() {
+    return this.species;
   }
 
   makeSound() {
-    console.log("Animal sound");
+    console.log("The animal makes a sound.");
   }
 }
 
@@ -24,10 +24,10 @@ class Dog extends Animal {
   }
 }
 
-// Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
+
 
 
 // //complete this code
